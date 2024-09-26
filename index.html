@@ -6,90 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
-        img{
-            box-sizing: border-box;
-            width: 300px;
-            padding: 10px;
-            border: 5px solid #333;
-            margin: 20px;
-            background-color: #f0f0f0;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
+        .divprincipal {
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            background-color: burlywood;
         }
 
-        .block {
-            width: 400px;
-            height: 300px;
-            display: block;
-            /* Elemento de bloque */
-            border: 5px solid rgb(158, 53, 53);
-            margin: 10px 0;
-            /* Margen superior e inferior */
+        img {
+            box-sizing: border-box;
+            width: 90%;
+            height: 90%;
             padding: 10px;
+            border: 5px solid #333;
+            margin: 10px;
+            object-fit: cover;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 10px;
         }
 
         .inline {
             display: inline-block;
-            /* Elemento en línea */
             background-color: lightyellow;
             width: 200px;
-            height: 400px;
+            height: auto;
             margin: 5px;
-            /* Margen alrededor */
             padding: 20px;
         }
 
-        .video-container a {
-            display: block;
-            color: #000;
+        .video a {
+            display: inline-block;
+            color: #e3dd23;
             text-decoration: none;
             font-size: 18px;
             margin-top: 10px;
-            width: 200px;
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
             padding: 20px;
             border: 5px solid green;
             box-sizing: border-box;
-            /* Incluye padding y borde */
             background-color: lightgreen;
             margin: 10px;
         }
 
-        .video-container a:hover {
+        .video a:hover {
             color: #007BFF;
             text-decoration: underline;
-        }
-        .border-box {
-           
         }
     </style>
 </head>
 
 <body>
-    
-    </p>
-    <div class="block">
-        <a href="https://www.freepik.es/foto-gratis/concepto-programacion-navegacion-tecnologia-diseno-web_25312343.htm#query=diseno%20web&position=2&from_view=keyword&track=ais_hybrid&uuid=2f867508-63c1-462b-886f-1accb3d44e03"
-            target="_blank">
-            <img src="https://img.freepik.com/foto-gratis/concepto-programacion-navegacion-tecnologia-diseno-web_53876-163260.jpg?t=st=1727284598~exp=1727288198~hmac=a6253fe5e4fc59cdb0d37954282b39a8ef6af7884ca4d1ecceebd45f84bc47b6&w=996"
-                alt="pida su diseño por catalogo">
-        </a>
+    <div class="divprincipal">
+        <div class="block">
+            <a href="https://www.freepik.es/foto-gratis/concepto-programacion-navegacion-tecnologia-diseno-web_25312343.htm#query=diseno%20web&position=2&from_view=keyword&track=ais_hybrid&uuid=2f867508-63c1-462b-886f-1accb3d44e03"
+                target="_blank">
+                <img src="https://img.freepik.com/foto-gratis/concepto-programacion-navegacion-tecnologia-diseno-web_53876-163260.jpg?t=st=1727284598~exp=1727288198~hmac=a6253fe5e4fc59cdb0d37954282b39a8ef6af7884ca4d1ecceebd45f84bc47b6&w=996"
+                    alt="pida su diseño por catalogo">
+            </a>
+        </div>
+        <div class="inline"> GUSTAVO RUBEN RETAMOZO CAYETANO - GUSTAVO RUBEN RETAMOZO CAYETANO -Elemento Inline 1 Lorem
+            ipsum dolor sit amet consectetur
+            adipisicing elit. Quibusdam provident
+            tenetur temporibus ipsam cum. Voluptatibus omnis minus soluta laborum a nam suscipit sit, odio rerum facilis
+            maiores illum commodi ratione.</div>
+        <div class="video">
+            <iframe width="80%" height="80%" src="https://www.youtube.com/embed/CD_S0P1o9-M"
+                title="Dragonslayer Xin Zhao | Login Screen - League of Legends" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="inline"> GUSTAVO RUBEN RETAMOZO CAYETANO - Elemento Inline 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam provident
-        tenetur temporibus ipsam cum. Voluptatibus omnis minus soluta laborum a nam suscipit sit, odio rerum facilis
-        maiores illum commodi ratione.</div>
-    <div class="video-container">
-        <video controls>
-            <source src="https://www.youtube.com/watch?v=CD_S0P1o9-M" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-        </video>
-        <a href="https://youtu.be/CD_S0P1o9-M" target="_blank">MUSICA XIN ZHAO</a>
-    </div>
-    
 </body>
-
 </html>
